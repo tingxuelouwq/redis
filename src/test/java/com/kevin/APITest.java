@@ -1,5 +1,6 @@
-package com.kevin.redis;
+package com.kevin;
 
+import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
 import java.util.HashMap;
@@ -7,14 +8,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Hello world!
- *
- */
-public class TestAPI
-{
-    public static void main( String[] args )
-    {
+public class APITest {
+    @Test
+    public void testAPI() {
         Jedis jedis = new Jedis("192.168.85.131");
         System.out.println(jedis.ping());
 
